@@ -38,15 +38,11 @@ Tmux.attach_pane = function()
         Tmux.prompt_for_pane_to_attach()
         local pane_to_attach = tonumber(vim.fn.input('Enter pane number: '))
         Tmux["pane"] = pane_to_attach
-        P(Tmux)
     else
         Tmux.prompt_for_pane_to_attach()
         local pane_to_attach = tonumber(vim.fn.input('Enter pane number: '))
         Tmux["pane"] = pane_to_attach
-        P(Tmux)
     end
 end
 
-Tmux.attach_pane()
-Tmux.send_command_to_runner("git status")
 return Tmux
