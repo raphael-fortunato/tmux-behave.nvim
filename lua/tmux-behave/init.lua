@@ -1,4 +1,4 @@
-local tmux = require("tmux")
+local tmux = require"tmux-behave.tmux"
 local vim = vim
 local M = {
 }
