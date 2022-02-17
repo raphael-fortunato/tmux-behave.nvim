@@ -1,4 +1,4 @@
-local tmux = require("lua.tmux")
+local tmux = require("tmux")
 local vim = vim
 local M = {
 }
